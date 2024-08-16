@@ -37,5 +37,17 @@ public class Demo1Step {
 	public void user_validates_title() {
 	    System.out.println(driver.getCurrentUrl());
 	}
+	
+	@When("user will enter first name")
+	public void user_will_enter_first_name() {
+	    
+		driver.findElement(By.name("firstname")).sendKeys("Rohini");
+	}
+	@Then("user will enter last name")
+	public void user_will_enter_last_name() {
+	    
+		driver.findElement(By.name("lastname")).sendKeys("Patil");
+		
+	}
 
 }
