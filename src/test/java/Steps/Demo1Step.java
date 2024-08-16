@@ -32,5 +32,10 @@ public class Demo1Step {
 	    
 	   System.out.println(driver.getTitle());
 	}
+	
+	@Then("user validates title")
+	public void user_validates_title() {
+	    System.out.println(driver.getCurrentUrl());
+	}
 
 }

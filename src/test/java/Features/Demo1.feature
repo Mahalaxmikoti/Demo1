@@ -4,3 +4,6 @@ Scenario: Validate url
 Given user is on login page
 When user enter valie credentials
 Then user will validate url
+
+Scenario: Validate title
+Then user validates title
