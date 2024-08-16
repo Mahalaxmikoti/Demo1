@@ -14,3 +14,4 @@ Then user will enter last name
 
 Scenario: Validate radio button
 When user selects radio button
+Then user select birth year
