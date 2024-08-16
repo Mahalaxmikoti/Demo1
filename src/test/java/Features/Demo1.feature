@@ -11,3 +11,6 @@ Then user validates title
 Scenario: Enter user name
 When user will enter first name
 Then user will enter last name
+
+Scenario: Validate radio button
+When user selects radio button

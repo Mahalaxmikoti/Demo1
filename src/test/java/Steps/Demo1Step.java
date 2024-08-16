@@ -14,11 +14,8 @@ public class Demo1Step {
 	
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
-	    
 		 driver= new ChromeDriver();
 		driver.get("https://www.facebook.com/reg");
-		
-	   
 	}
 
 	@When("user enter valie credentials")
@@ -48,6 +45,12 @@ public class Demo1Step {
 	    
 		driver.findElement(By.name("lastname")).sendKeys("Patil");
 		
+	}
+	
+	@When("user selects radio button")
+	public void user_selects_radio_button() {
+	    
+		driver.findElement(By.xpath("//input[@value='1']")).click();
 	}
 
 }
