@@ -7,3 +7,7 @@ Then user will validate url
 
 Scenario: Validate title
 Then user validates title
+
+Scenario: Enter user name
+When user will enter first name
+Then user will enter last name
